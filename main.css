@@ -1,16 +1,198 @@
+.navbar {
+  background: linear-gradient(to bottom, #1c1c1c, rgba(28, 28, 28, 0.2));
+}
+.navbar .nav-item .nav-link {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  transition: color 0.5s ease, border 0.5s ease;
+}
+.navbar .nav-item .nav-link.active {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #d4af37;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #1c1c1c;
+  }
+  .navbar .navbar-toggler {
+    color: #fff;
+    border: none;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath stroke='white' stroke-width='2' d='M1 2h14M1 8h14M1 14h14'/%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+  }
+}
+#hero {
+  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0.2)), url(../images/imagem_hero_medium.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+}
+@media (min-width: 992px) {
+  #hero {
+    margin-top: -58px;
+  }
+}
+#hero .container-content h1 {
+  color: #d4af37;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+}
+#hero .container-content p {
+  color: #e1e1e1;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  #hero .container-content {
+    position: relative;
+    z-index: 2;
+  }
+  #hero .container-content h1 {
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.4);
+  }
+}
+@media (max-width: 430px) {
+  #hero .container-content h1 {
+    font-size: 36px;
+  }
+  #hero .container-content p {
+    letter-spacing: 1px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  text-decoration: none;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+section {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+@media (max-width: 992px) {
+  section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+li {
   list-style: none;
 }
 
 button, a {
   cursor: pointer;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 img, svg {
   width: 100%;
+}
+
+.btn-brand {
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px 36px;
+  background-color: #d4af37;
+  border: 2px solid #d4af37;
+  color: #1c1c1c;
+  display: inline-block;
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+.btn-brand:hover {
+  background-color: transparent;
+  color: #d4af37;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+@media (max-width: 430px) {
+  .btn-brand {
+    padding: 16px 12px;
+  }
+}
+
+.btn-outline-brand {
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px 36px;
+  background-color: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  display: inline-block;
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+.btn-outline-brand:hover {
+  background-color: #d4af37;
+  color: #1c1c1c;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+@media (max-width: 430px) {
+  .btn-outline-brand {
+    padding: 16px 12px;
+  }
+}
+
+.btn-cart {
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px;
+  background-color: #d4af37;
+  color: #fff;
+  display: block;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+.btn-cart:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+  transition: color 0.5s ease;
+}
+.brand:hover {
+  color: #d4af37;
 }/*# sourceMappingURL=main.css.map */

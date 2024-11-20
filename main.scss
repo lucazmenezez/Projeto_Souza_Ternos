@@ -1,18 +1,118 @@
 @import './styles/variables';
+@import './styles/header';
+@import './styles/hero';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: $fonteSansSerif;
-    text-decoration: none;
+}
+
+body {
+    background-color: $corPretoFosco;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fonteSerif;
+}
+
+section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    @media (max-width: 992px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+li {
     list-style: none;
 }
 
 button, a {
     cursor: pointer;
+    text-decoration: none;
+    font-family: $fonteSansSerif;
 }
 
 img, svg {
     width: 100%;
+}
+
+//botões do projeto
+.btn-brand {
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 36px;
+    background-color: $corDourado;
+    border: 2px solid $corDourado;
+    color: $corPretoFosco;
+    display: inline-block;
+    transition: background-color .5s ease, color .5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+
+    &:hover {
+        background-color: transparent;
+        color: $corDourado;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+
+    @media (max-width: 430px) {
+        padding: 16px 12px;
+    }
+}
+
+.btn-outline-brand {
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 36px;
+    background-color: transparent;
+    color: $corDourado;
+    border: 2px solid $corDourado;
+    display: inline-block;
+    transition: background-color .5s ease, color .5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+
+    &:hover {
+        background-color: $corDourado;
+        color: $corPretoFosco;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+
+    @media (max-width: 430px) {
+        padding: 16px 12px;
+    }
+}
+
+.btn-cart {
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px;
+    background-color: $corDourado;
+    color: $corBranco;
+    display: block;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+}
+
+//estilo da marca Souza Ternos
+.brand {
+    font-family: $fonteSerif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+    color: $corBranco;
+    transition: color .5s ease;
+
+    &:hover {
+        color: $corDourado;
+    }
 }

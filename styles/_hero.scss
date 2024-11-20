@@ -1,0 +1,71 @@
+@import './variables';
+
+#hero {
+    background: linear-gradient(to right, #000, rgb(0, 0, 0, 0.2)), url(../images/imagem_hero_medium.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+
+    @media (min-width: 992px) {
+        margin-top: -58px;
+    }
+
+    .container-content {
+
+        h1 {
+            color: $corDourado;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 60px;
+        }
+
+        p {
+            color: $corCinza3;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #hero {
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); // Cor preta com 50% de opacidade
+            z-index: 1; // Fica acima da imagem
+        }
+        .container-content {
+            position: relative; // Para garantir que o texto fique acima da camada escura
+            z-index: 2;
+
+            h1 {
+                text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.4);
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    #hero {
+        .container-content {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
