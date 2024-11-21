@@ -1,6 +1,8 @@
 @import './styles/variables';
 @import './styles/header';
 @import './styles/hero';
+@import './styles/about';
+@import './styles/reviews';
 
 * {
     padding: 0;
@@ -15,16 +17,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $fonteSerif;
-}
-
-section {
-    padding-top: 160px;
-    padding-bottom: 160px;
-
-    @media (max-width: 992px) {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
 }
 
 li {
@@ -63,6 +55,13 @@ img, svg {
     @media (max-width: 430px) {
         padding: 16px 12px;
     }
+
+    @media (max-width: 329px) {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+        text-align: center;
+    }
 }
 
 .btn-outline-brand {
@@ -86,6 +85,12 @@ img, svg {
     @media (max-width: 430px) {
         padding: 16px 12px;
     }
+
+    @media (max-width: 329px) {
+        display: block;
+        text-align: center;
+        width: 100%;
+    } 
 }
 
 .btn-cart {
@@ -115,4 +120,20 @@ img, svg {
     &:hover {
         color: $corDourado;
     }
+}
+
+//estilo de titulos
+.title-small {
+    color: $corDourado;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: $fonteSansSerif;
+}
+
+.title-large {
+    color: $corDourado;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: $fonteSerif;
 }

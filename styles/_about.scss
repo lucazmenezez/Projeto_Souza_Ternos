@@ -1,0 +1,48 @@
+@import './variables';
+
+#about {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 112px;
+    
+    img {
+        max-width: 450px;
+        max-height: 450px;
+        border-radius: 12px;
+    }
+
+    p {
+        letter-spacing: 1px;
+        color: $corBranco;
+        line-height: 28px;
+        margin: 24px 0 0;
+    }
+
+    .about-list {
+        margin: 24px 0 0;
+
+        li {
+            margin-bottom: 4px;
+
+            i {
+                color: rgb(23, 187, 23);
+                margin-right: 8px;
+            }
+
+            span {
+                color: $corCinza;
+                letter-spacing: 1px;
+                font-family: $fonteSansSerif;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #about {
+        img {
+            margin-bottom: 32px;
+        }
+    }
+}
