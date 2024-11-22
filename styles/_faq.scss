@@ -1,0 +1,48 @@
+@import './variables';
+
+#faq {
+    padding: 112px 0;
+    background-color: $corCinza2;
+
+    .title-faq {
+        margin: 0 0 80px;
+
+        p {
+            color: $corPreto;
+            font-weight: 500;
+        }
+    }
+
+    .row-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cta {
+        letter-spacing: 1px;
+
+        h3 {
+            font-weight: bold;
+            color: $corPreto;
+        }
+
+        p {
+            margin: 18px 0;
+            color: $corPretoFosco;
+        }
+    }
+
+    .faq {
+
+        .accordion-item {
+            margin-bottom: 8px;
+            border-radius: 12px;
+        }
+
+        .accordion-button {
+            color: $corPreto;
+            border-radius: 12px;
+        }
+    }
+}

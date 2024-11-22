@@ -175,6 +175,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 250px;
 }
 #reviews .carousel-inner .carousel-item .person img {
   border-radius: 50%;
@@ -204,10 +205,199 @@
   #reviews .carousel-indicators {
     top: 400px;
   }
-  #reviews .person {
-    max-width: 250px;
+}
+#products {
+  padding: 112px 0;
+}
+#products .title-products {
+  margin: 0 0 80px;
+}
+#products .title-products p {
+  color: #fff;
+  font-weight: 500;
+}
+#products .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+  row-gap: 60px;
+}
+#products .products .product-item img {
+  border-radius: 12px;
+}
+#products .products .product-item .primary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: #fff;
+}
+#products .products .product-item .primary-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: block;
+}
+#products .products .product-item .primary-price {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: block;
+}
+#products .products .product-item small {
+  color: #ccc;
+  display: block;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+  #products .products {
+    grid-template-columns: 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #products .products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#faq {
+  padding: 112px 0;
+  background-color: #eee;
+}
+#faq .title-faq {
+  margin: 0 0 80px;
+}
+#faq .title-faq p {
+  color: #000;
+  font-weight: 500;
+}
+#faq .row-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#faq .cta {
+  letter-spacing: 1px;
+}
+#faq .cta h3 {
+  font-weight: bold;
+  color: #000;
+}
+#faq .cta p {
+  margin: 18px 0;
+  color: #1c1c1c;
+}
+#faq .faq .accordion-item {
+  margin-bottom: 8px;
+  border-radius: 12px;
+}
+#faq .faq .accordion-button {
+  color: #000;
+  border-radius: 12px;
+}
+
+#contact {
+  padding: 112px 0;
+  background-color: #fff;
+}
+#contact .title-contact {
+  padding: 0 0 80px;
+}
+#contact .title-contact h6 {
+  color: #1c1c1c;
+}
+#contact .title-contact p {
+  color: #000;
+  font-weight: 500;
+}
+#contact .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+#contact .contacts-item {
+  margin-bottom: 40px;
+}
+#contact .contacts-item i {
+  margin-bottom: 16px;
+  color: #d4af37;
+  font-size: 24px;
+}
+#contact .contacts-item b {
+  display: block;
+}
+#contact .contacts-item p {
+  margin: 8px 0;
+}
+
+#footer {
+  background-color: #1c1c1c;
+  padding: 80px 0 40px;
+}
+#footer .footer-layer1 {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d4af37;
+}
+#footer .footer-layer1 h2 a {
+  color: #d4af37;
+}
+#footer .footer-layer1 .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#footer .footer-layer1 .links li {
+  margin-right: 12px;
+}
+#footer .footer-layer1 .links li a {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+#footer .footer-layer1 .links li a:hover {
+  color: #d4af37;
+}
+#footer .footer-layer1 .list-icons {
+  color: #fff;
+  display: flex;
+  padding: 0 16px;
+}
+#footer .footer-layer1 .list-icons li {
+  margin-right: 12px;
+}
+#footer .footer-layer1 .list-icons li i {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#footer .footer-layer1 .list-icons li i:hover {
+  transform: translateY(-5px);
+}
+#footer .footer-layer2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 24px;
+}
+#footer .footer-layer2 p {
+  font-weight: 400;
+}
+#footer .footer-layer2 span {
+  font-weight: 400;
+}
+#footer .footer-layer2 span a {
+  color: #d4af37;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -306,10 +496,10 @@ img, svg {
   background-color: #d4af37;
   color: #fff;
   display: block;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  transition: transform 0.5s ease;
 }
 .btn-cart:hover {
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
 }
 
 .brand {

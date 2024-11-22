@@ -3,6 +3,10 @@
 @import './styles/hero';
 @import './styles/about';
 @import './styles/reviews';
+@import './styles/products';
+@import './styles/faq';
+@import './styles/contact';
+@import './styles/footer';
 
 * {
     padding: 0;
@@ -101,10 +105,10 @@ img, svg {
     background-color: $corDourado;
     color: $corBranco;
     display: block;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transition: transform .5s ease;
 
     &:hover {
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        transform: scale(1.05);
     }
 }
 

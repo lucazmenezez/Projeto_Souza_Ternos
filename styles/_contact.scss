@@ -1,0 +1,43 @@
+@import './variables';
+
+#contact {
+    padding: 112px 0;
+    background-color: $corBranco;
+
+    .title-contact {
+        padding: 0 0 80px;
+
+        h6 {
+            color: $corPretoFosco;
+        }
+
+        p {
+            color: $corPreto;
+            font-weight: 500;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        
+        &-item {
+            margin-bottom: 40px;
+
+            i {
+                margin-bottom: 16px;
+                color: $corDourado;
+                font-size: 24px;
+            }
+
+            b {
+                display: block;
+            }
+
+            p {
+                margin: 8px 0;
+            }
+        }
+    }
+}

@@ -50,6 +50,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                max-width: 250px;
 
                 img {
                     border-radius: 50%;
@@ -91,10 +92,6 @@
 
         .carousel-indicators {
             top: 400px;
-        }
-
-        .person {
-            max-width: 250px;
         }
     }
 }
