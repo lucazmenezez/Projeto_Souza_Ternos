@@ -91,6 +91,14 @@
         }
 
         .carousel-indicators {
+            top: 350px;
+        }
+    }
+}
+
+@media (max-width: 372px) {
+    #reviews {
+        .carousel-indicators {
             top: 400px;
         }
     }

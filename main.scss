@@ -7,6 +7,7 @@
 @import './styles/faq';
 @import './styles/contact';
 @import './styles/footer';
+@import './styles/btnwpp';
 
 * {
     padding: 0;
@@ -109,6 +110,10 @@ img, svg {
 
     &:hover {
         transform: scale(1.05);
+
+        @media (max-width: 767px) {
+            transform: scale(1.03);
+        }
     }
 }
 
