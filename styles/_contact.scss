@@ -41,3 +41,18 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    #contact {
+        padding: 64px 0;
+
+        .title-contact {
+            padding: 48px 12px;
+            text-align: center;
+        }
+
+        .contacts {
+            padding: 0 12px;
+        }
+    }
+}

@@ -13,6 +13,11 @@
         h2 {
             a {
                 color: $corDourado;
+                transition: color .5s ease;
+
+                &:hover {
+                    color: $corBranco;
+                }
             }
         }
 
@@ -21,6 +26,7 @@
             align-items: center;
             justify-content: center;
             padding: 0;
+            margin: 0;
 
             li {
                 margin-right: 12px;
@@ -40,6 +46,7 @@
             color: $corBranco;
             display: flex;
             padding: 0 16px;
+            margin: 0;
 
             li {
                 margin-right: 12px;
@@ -58,6 +65,7 @@
     }
 
     .footer-layer2 {
+        font-size: 14px;
         color: $corBranco;
         text-align: center;
         padding-top: 40px;
@@ -80,4 +88,55 @@
             }
         }
     }
-} 
+}
+
+@media (max-width: 992px) {
+    #footer {
+        padding: 48px 0;
+
+        .footer-layer1 {
+            align-items: center;
+            padding-bottom: 48px;
+            text-align: center;
+
+            .links {
+                flex-direction: column;
+                padding: 0 12px;
+                margin: 48px 0;
+
+                li {
+                    margin-right: 0;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .list-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 12px;
+                margin: 0 auto;
+    
+                li {
+                    margin-right: 0;
+                    
+                    &:nth-child(2) {
+                        margin: 0 18px;
+                    }
+
+                    i {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .footer-layer2 {
+            padding-top: 24px;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-direction: column;
+        }
+    }
+}
