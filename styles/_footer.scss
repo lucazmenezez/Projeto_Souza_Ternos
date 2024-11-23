@@ -55,6 +55,7 @@
                     font-size: 20px;
                     transition: transform 0.3s ease;
                     cursor: pointer;
+                    color: $corBranco;
 
                     &:hover {
                         transform: translateY(-5px);

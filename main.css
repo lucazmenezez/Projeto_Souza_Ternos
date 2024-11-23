@@ -417,6 +417,7 @@
   font-size: 20px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  color: #fff;
 }
 #footer .footer-layer1 .list-icons li i:hover {
   transform: translateY(-5px);
@@ -529,6 +530,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
 }
 
 body {
